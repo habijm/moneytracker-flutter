@@ -104,14 +104,62 @@ class _HomePageState extends State<HomePage> {
           ),
 
           // List Transactions
-          ListTile(
-            leading: Container(
-              child: Icon(
-                Icons.upload,
-                color: Colors.red,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Card(
+              elevation: 10,
+              child: ListTile(
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    
+                    Icon(Icons.delete),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(Icons.edit)
+                  ],
+                ),
+                title: Text('Rp. 20.000'),
+                subtitle: Text('Makan Siang'),
+                leading: Container(
+                  child: Icon(
+                    Icons.upload,
+                    color: Colors.red,
+                  ),
+                  decoration: BoxDecoration(
+                      color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                ),
               ),
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(8)),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Card(
+              elevation: 10,
+              child: ListTile(
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    
+                    Icon(Icons.delete),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(Icons.edit)
+                  ],
+                ),
+                title: Text('Rp. 20.000'),
+                subtitle: Text('Gaji Bulanan'),
+                leading: Container(
+                  child: Icon(
+                    Icons.upload,
+                    color: Colors.green,
+                  ),
+                  decoration: BoxDecoration(
+                      color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                ),
+              ),
             ),
           )
         ],
